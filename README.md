@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Maze Generation with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Created while learning React and a bit of DFS ��.
+Check Live Demo [visit link](https://react-maze-generator.netlify.app).
 
 ## Available Scripts
 
