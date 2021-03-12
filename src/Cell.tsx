@@ -18,7 +18,7 @@ export class Cell extends React.Component<Props> {
         if (props.walls.left) classes = classes + ' border-l'
         if (props.walls.right) classes = classes + ' border-r'
         if (props.walls.bottom) classes = classes + ' border-b'
-        if (props.visited) classes = classes + ' bg-black'
+        if (props.visited) classes = classes + ' bg-gray-800'
         return (
             <div className={classes}>
                 
