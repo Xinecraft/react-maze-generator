@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import React, { useState } from "react";
+import React from "react";
 import { Cell } from "./Cell";
 import _ from "lodash";
 
