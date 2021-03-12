@@ -13,7 +13,7 @@ export class Cell extends React.Component<Props> {
             props,
         } = this;
 
-        let classes = 'cell h-4 w-4 flex justify-center items-center border-gray-400'
+        let classes = 'cell w-3 h-3 md:h-4 md:w-4 lg:h-5 lg:w-5 flex justify-center items-center border-gray-400'
         if (props.walls.top) classes = classes + ' border-t'
         if (props.walls.left) classes = classes + ' border-l'
         if (props.walls.right) classes = classes + ' border-r'
