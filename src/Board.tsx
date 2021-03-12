@@ -57,7 +57,7 @@ export class Board extends React.Component<Props, State> {
     if (this.running) return
 
     this.makeFreshGrid()
-    await timeout(0)
+    await timeout(1)
 
     this.running = true
     let stack: any = [];
@@ -107,6 +107,14 @@ export class Board extends React.Component<Props, State> {
         stack.push(currNb);
       }
     }
+
+        let nGrid = this.state.grid.slice();
+        nGrid[0][0].walls =  { ...nGrid[0][0].walls, left: false };
+        nGrid[24][24].walls = { ...nGrid[24][24].walls, right: false };
+        this.setState({
+          grid: nGrid,
+        });
+
     this.running = false
   };
 
